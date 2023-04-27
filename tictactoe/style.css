@@ -1,0 +1,104 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(https://img.freepik.com/premium-vector/white-gray-marble-texture-backgrounds_186931-387.jpg?w=2000);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  height: 20vh;
+  width: 50vh;
+  padding: 15px;
+  z-index: 10;
+  background-color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay-transition {
+  transition: all 3s ease-in-out;
+}
+
+.modal > div {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.checkbox-container {
+  margin-right: 10px;
+  font-size: 23px;
+}
+
+.modal-btn {
+  height: 30px;
+  width: 100px;
+  margin-top: 25px;
+}
+
+table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  height: 50%;
+  width: 60%;
+  border-collapse: collapse;
+  background-image: url(https://4.imimg.com/data4/MD/BD/MY-4012228/wooden-pattern-500x500.jpg);
+}
+
+.cell {
+  height: 16%;
+  width: 19%;
+  border: solid black;
+  border-width: 4px 4px 4px 4px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+  color: white;
+  transition: all 0.25s ease-out;
+}
+
+.cell-empty {
+  cursor: pointer;
+}
+
+.cell-chosen {
+  cursor: default;
+}
+
+.cell-win {
+  background-color: rgba(55, 255, 55, 0.4);
+}
+
+.game-symbol {
+  display: inline;
+}

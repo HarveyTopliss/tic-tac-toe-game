@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <table id="game-board">
+      <tr>
+        <td id="cell0" class="cell cell-empty"></td>
+        <td id="cell1" class="cell cell-empty"></td>
+        <td id="cell2" class="cell cell-empty"></td>
+      </tr>
+      <tr>
+        <td id="cell3" class="cell cell-empty"></td>
+        <td id="cell4" class="cell cell-empty"></td>
+        <td id="cell5" class="cell cell-empty"></td>
+      </tr>
+      <tr>
+        <td id="cell6" class="cell cell-empty"></td>
+        <td id="cell7" class="cell cell-empty"></td>
+        <td id="cell8" class="cell cell-empty"></td>
+      </tr>
+    </table>
+    <div class="modal hidden">
+      <h1>Do you want to play as naughts or crosses?</h1>
+      <div>
+        <label class="checkbox-container">
+          <input type="radio" class="checkboxX" />X
+        </label>
+        <label class="checkbox-container"
+          ><input type="radio" class="checkboxO" />O</label
+        ><br />
+        <button class="modal-btn">Play</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
